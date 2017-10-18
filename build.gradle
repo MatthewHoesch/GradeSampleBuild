@@ -1,0 +1,11 @@
+task plumbus << {
+	println "A plumbus for you!"
+	}
+
+task schleem(dependsOn: plumbus) << {
+	println "schleem has been repurposed"
+	}
+
+task grumbo(dependsOn: schleem) << {
+	println "that leaves you with a regular old plumbus"
+	}
